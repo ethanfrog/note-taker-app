@@ -22,7 +22,7 @@ class Notes {
     return writeFileAsync('./db/db.json', JSON.stringify(note));
   }
 
-  addNote(note) {
+  postNote(note) {
     const noteTitle = note.title;
     const noteText = note.text;
     const noteID = uuid();
