@@ -4,13 +4,15 @@
 
 A web application that lets the user take and save notes.
 
+![Module 11 Challenge Homepage](images/mod11chal-image.png)
+
 ## Installation
 
-N/A
+This app will be deployed to Heroku.
 
 ## Usage
 
-N/A
+Click the "Get Started" button to enter the notes page. From there, you can both see your previous notes on the left side and enter new notes on the right. Enter some content into the title and text fields and click the "Save Note" button to send your note to the app. You can also undo your work with the "Clear Form" button.
 
 ## Credits
 

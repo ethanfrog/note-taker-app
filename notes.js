@@ -13,7 +13,10 @@ class Notes {
   getNotes() {
     return this.read()
     .then((notes) => {
-      let notesArray = [].concat(JSON.parse(notes));
+      // Initialize the notes array as empty
+      let notesArray = [];
+      // Insert existing notes into the notes array
+      notesArray.concat(JSON.parse(notes));
       return notesArray;
     });
   }
@@ -25,15 +28,17 @@ class Notes {
   postNote(note) {
     const noteTitle = note.title;
     const noteText = note.text;
+    // Generates a unique ID for each note
     const noteID = uuid();
 
     const newNote = { noteTitle, noteText, noteID };
 
-    // Get all notes, add the new note, write all the updated notes, return the newNote
     return this.getNotes()
-      .then((notes) => [...notes, newNote])
-      .then((updatedNotes) => this.write(updatedNotes))
-      .then(() => newNote);
+    // Add the new note to the set of existing notes
+    .then((notes) => [...notes, newNote])
+    // Rewrite the set of notes that was just altered
+    .then((notes) => this.write(notes))
+    .then(() => newNote);
   }
 
 }
