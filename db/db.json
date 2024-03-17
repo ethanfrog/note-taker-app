@@ -1,10 +1,1 @@
-[
-    {
-        "title": "First Note",
-        "text": "This is the first note in the system"
-    },
-    {
-        "title": "Second Note",
-        "text": "This is the second note in the system"
-    }
-]
+[{"title":"First Note","text":"This is the first note in the system"},{"title":"Second Note","text":"This is the second note in the system"},{"noteTitle":"Among Us","noteText":"Among Us","noteID":"776ee1c0-e40c-11ee-a881-0572aaf52594"},{"noteTitle":"Stuff","noteText":"Stuff","noteID":"65109f40-e40d-11ee-a47f-dd4e726e0282"}]
